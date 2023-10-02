@@ -32,7 +32,7 @@
 		"typescript": "^5.2.2"
 	},
 	"scripts": {
-		"link": "npm link",
+		"link": "npm link @printf83/ts-tag",
 		"clean": "node scripts/clean.cjs",
 		"compile": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
 		"debug": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json -w",
