@@ -29,7 +29,8 @@
 	},
 	"devDependencies": {
 		"@types/node": "^20.6.3",
-		"typescript": "^5.2.2"
+		"typescript": "^5.2.2",
+		"@printf83/ts-tag":"^0.0.1"
 	},
 	"scripts": {
 		"link": "npm link @printf83/ts-tag",
