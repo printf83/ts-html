@@ -1,6 +1,4 @@
-import { attr, elem } from "@printf83/ts-tag/build/types/interface.js";
-import { tag } from "@printf83/ts-tag/build/types/tag.js";
-import { mergeClass, mergeObject, tagConstructor } from "@printf83/ts-tag";
+import { mergeClass, mergeObject, tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
 
 export interface A extends attr {
 	download?: string;

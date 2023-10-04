@@ -1,5 +1,4 @@
-import { attr } from "@printf83/ts-tag/build/types/interface.js";
-import { tag } from "@printf83/ts-tag/build/types/tag.js";
+import { tag, attr } from "@printf83/ts-tag";
 
 export interface Embed extends attr {
 	src?: string;

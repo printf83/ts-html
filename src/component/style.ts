@@ -1,6 +1,4 @@
-import { attr } from "@printf83/ts-tag/build/types/interface.js";
-import { tag } from "@printf83/ts-tag/build/types/tag.js";
-import { tagConstructor } from "@printf83/ts-tag";
+import { tagConstructor, tag, attr } from "@printf83/ts-tag";
 
 export interface Style extends attr {
 	media?: string;

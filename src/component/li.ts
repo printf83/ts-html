@@ -1,6 +1,4 @@
-import { attr, elem } from "@printf83/ts-tag/build/types/interface.js";
-import { tag } from "@printf83/ts-tag/build/types/tag.js";
-import { mergeClass, tagConstructor } from "@printf83/ts-tag";
+import { mergeClass, tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
 
 export interface Li extends attr {
 	value?: string;
