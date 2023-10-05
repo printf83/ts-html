@@ -1,8 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Map extends attr {
-	name?: string;
-}
+import { map as Map } from "../interface/_index.js";
 
 export class map extends tag {
 	constructor();

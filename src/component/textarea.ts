@@ -1,20 +1,5 @@
 import { tagConstructorNoElement, tag, attr } from "@printf83/ts-tag";
-
-export interface Textarea extends attr {
-	autofocus?: boolean;
-	cols?: number;
-	dirname?: string;
-	disabled?: boolean;
-	form?: string;
-	maxlength?: number;
-	name?: string;
-	placeholder?: string;
-	readonly?: boolean;
-	required?: boolean;
-	rows?: number;
-	wrap?: "hard" | "soft";
-	value?: string;
-}
+import { textarea as Textarea } from "../interface/_index.js";
 
 const convert = (attr: Textarea) => {
 	//move value to elem

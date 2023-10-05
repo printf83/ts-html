@@ -1,8 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Colgroup extends attr {
-	span?: number;
-}
+import { colgroup as Colgroup } from "../interface/_index.js";
 
 export class colgroup extends tag {
 	constructor();

@@ -1,9 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Ins extends attr {
-	cite?: string;
-	datetime?: string | Date;
-}
+import { ins as Ins } from "../interface/_index.js";
 
 export class ins extends tag {
 	constructor();

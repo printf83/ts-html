@@ -1,9 +1,5 @@
-import { tag, attr } from "@printf83/ts-tag";
-
-export interface Embed extends attr {
-	src?: string;
-	type?: string;
-}
+import { tag } from "@printf83/ts-tag";
+import { embed as Embed } from "../interface/_index.js";
 
 export class embed extends tag {
 	constructor();
@@ -19,15 +15,3 @@ export class embed extends tag {
 		}
 	}
 }
-
-export const Embed = (AttrOrType?: Embed | string, Src?: string) => {
-	if (AttrOrType) {
-		if (Src) {
-			return new embed(AttrOrType as string, Src);
-		} else {
-			return new embed(AttrOrType as Embed);
-		}
-	} else {
-		return new embed();
-	}
-};

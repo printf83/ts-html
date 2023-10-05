@@ -20,7 +20,6 @@ import { img } from "./img.js";
 import { input } from "./input.js";
 import { ins } from "./ins.js";
 import { label } from "./label.js";
-import { li } from "./li.js";
 import { link } from "./link.js";
 import { map } from "./map.js";
 import { meta } from "./meta.js";
@@ -69,7 +68,6 @@ export {
 	input,
 	ins,
 	label,
-	li,
 	link,
 	map,
 	meta,

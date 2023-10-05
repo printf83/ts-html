@@ -1,27 +1,7 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-import { optgroup, Optgroup } from "./optgroup.js";
-import { option, Option } from "./option.js";
-
-export interface SelectItem extends Option, Optgroup {
-	value?: string;
-	label?: string;
-	elem?: elem | elem[];
-	selected?: boolean;
-
-	item?: SelectItem | SelectItem[];
-}
-
-export interface Select extends attr {
-	autofocus?: boolean;
-	disabled?: boolean;
-	form?: string;
-	multiple?: boolean;
-	name?: string;
-	required?: boolean;
-	size?: number;
-
-	item?: SelectItem | SelectItem[];
-}
+import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { optgroup } from "./optgroup.js";
+import { option } from "./option.js";
+import { select as Select } from "../interface/_index.js";
 
 const convert = (attr: Select) => {
 	if (attr.item && !attr.elem) {

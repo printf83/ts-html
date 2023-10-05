@@ -1,9 +1,6 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { datalist as Datalist } from "../interface/_index.js";
 import { option } from "./option.js";
-
-export interface Datalist extends attr {
-	item?: string | string[];
-}
 
 const convert = (attr: Datalist) => {
 	if (attr.item && !attr.elem) {

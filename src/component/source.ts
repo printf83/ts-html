@@ -1,14 +1,5 @@
 import { tagConstructorNoElement, tag, attr } from "@printf83/ts-tag";
-
-export interface Source extends attr {
-	media?: string;
-	sizes?: string;
-	src?: string;
-	srcset?: string;
-	type?: string;
-
-	elem?: undefined;
-}
+import { source as Source } from "../interface/_index.js";
 
 export class source extends tag {
 	constructor();

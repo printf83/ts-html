@@ -1,10 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Fieldset extends attr {
-	disabled?: boolean;
-	form?: string;
-	name?: string;
-}
+import { fieldset as Fieldset } from "../interface/_index.js";
 
 export class fieldset extends tag {
 	constructor();

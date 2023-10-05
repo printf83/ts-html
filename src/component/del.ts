@@ -1,9 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Del extends attr {
-	cite?: string;
-	datetime?: string | Date;
-}
+import { del as Del } from "../interface/_index.js";
 
 export class del extends tag {
 	constructor();

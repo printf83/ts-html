@@ -1,13 +1,5 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Audio extends attr {
-	autoplay?: boolean;
-	controls?: boolean;
-	loop?: boolean;
-	muted?: boolean;
-	preload?: "auto" | "metadata" | "none";
-	src?: string;
-}
+import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { audio as Audio } from "../interface/_index.js";
 
 export class audio extends tag {
 	constructor();

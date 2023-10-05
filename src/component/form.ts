@@ -1,26 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Form extends attr {
-	acceptCharset?: string;
-	action?: string;
-	autocomplete?: "on" | "off";
-	enctype?: "application/x-www-form-urlencoded" | "multipart/form-data" | "text/plain	";
-	method?: "get" | "post";
-	name?: string;
-	novalidate?: boolean;
-	rel?:
-		| "external"
-		| "help"
-		| "license"
-		| "next"
-		| "nofollow"
-		| "noopener"
-		| "noreferrer"
-		| "opener"
-		| "prev"
-		| "search";
-	target?: "_blank" | "_self" | "_parent" | "_top";
-}
+import { form as Form } from "../interface/_index.js";
 
 export class form extends tag {
 	constructor();

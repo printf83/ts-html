@@ -1,3 +1,5 @@
+import * as I from "./interface/_index.js";
+
 import { a } from "./component/a.js";
 import { abbr } from "./component/abbr.js";
 import { address } from "./component/address.js";
@@ -109,6 +111,7 @@ import { video } from "./component/video.js";
 import { wbr } from "./component/wbr.js";
 
 export {
+	I,
 	a,
 	abbr,
 	address,

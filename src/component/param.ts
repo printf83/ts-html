@@ -1,9 +1,5 @@
 import { tagConstructorNoElement, tag, attr } from "@printf83/ts-tag";
-
-export interface Param extends attr {
-	name?: string;
-	value?: string;
-}
+import { param as Param } from "../interface/_index.js";
 
 export class param extends tag {
 	constructor();

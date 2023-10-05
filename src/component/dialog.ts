@@ -1,8 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Dialog extends attr {
-	open?: boolean;
-}
+import { dialog as Dialog } from "../interface/_index.js";
 
 export class dialog extends tag {
 	constructor();

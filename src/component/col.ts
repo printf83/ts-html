@@ -1,8 +1,5 @@
 import { tagConstructorNoElement, tag, attr } from "@printf83/ts-tag";
-
-export interface Col extends attr {
-	span?: number;
-}
+import { col as Col } from "../interface/_index.js";
 
 export class col extends tag {
 	constructor();

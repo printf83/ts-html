@@ -1,18 +1,8 @@
-import { mergeClass, tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { tagConstructor, tag, elem } from "@printf83/ts-tag";
 import { li } from "./li.js";
-
-export interface Ul extends attr {
-	unstyle?: boolean;
-	inline?: boolean;
-	item?: elem | elem[];
-}
+import { ul as Ul } from "../interface/_index.js";
 
 const convert = (attr: Ul) => {
-	attr.class = mergeClass(attr.class, [
-		attr.unstyle ? "list-unstyled" : undefined,
-		attr.inline ? "list-inline" : undefined,
-	]);
-
 	if (attr.item && !attr.elem) {
 		if (!Array.isArray(attr.item)) {
 			attr.item = [attr.item];
@@ -23,8 +13,6 @@ const convert = (attr: Ul) => {
 		});
 	}
 
-	delete attr.unstyle;
-	delete attr.inline;
 	delete attr.item;
 
 	return attr;

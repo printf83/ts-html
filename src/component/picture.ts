@@ -1,13 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Picture extends attr {
-	dataText?: string;
-	form?: string;
-	name?: string;
-	type?: string;
-	typemustmatch?: boolean;
-	usemap?: string;
-}
+import { picture as Picture } from "../interface/_index.js";
 
 export class picture extends tag {
 	constructor();

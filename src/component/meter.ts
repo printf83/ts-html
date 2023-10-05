@@ -1,14 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Meter extends attr {
-	form?: string;
-	high?: number;
-	low?: number;
-	max?: number;
-	min?: number;
-	optimum?: number;
-	value?: number;
-}
+import { meter as Meter } from "../interface/_index.js";
 
 export class meter extends tag {
 	constructor();

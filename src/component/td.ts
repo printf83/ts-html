@@ -1,10 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Td extends attr {
-	colspan?: number;
-	headers?: string;
-	rowspan?: number;
-}
+import { td as Td } from "../interface/_index.js";
 
 export class td extends tag {
 	constructor();

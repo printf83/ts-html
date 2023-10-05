@@ -1,8 +1,5 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Blockquote extends attr {
-	cite?: string;
-}
+import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { blockquote as Blockquote } from "../interface/_index.js";
 
 export class blockquote extends tag {
 	constructor();

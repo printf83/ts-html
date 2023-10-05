@@ -1,22 +1,5 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Track extends attr {
-	default?: boolean;
-	kind?: "captions" | "chapters" | "descriptions" | "metadata" | "subtitles";
-	label?: string;
-	attrLabel?: string;
-	src?: string;
-	srclang?: string;
-}
-
-const convert = (attr: Track) => {
-	if (attr.label) {
-		attr.attrLabel = attr.label;
-		delete attr.label;
-	}
-
-	return attr;
-};
+import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { track as Track } from "../interface/_index.js";
 
 export class track extends tag {
 	constructor();
@@ -24,6 +7,6 @@ export class track extends tag {
 	constructor(attr: Track);
 	constructor(attr: Track, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("track", convert(tagConstructor<Track>("elem", arg)));
+		super("track", tagConstructor<Track>("elem", arg));
 	}
 }

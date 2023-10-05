@@ -1,8 +1,5 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Bdo extends attr {
-	dir?: "ltr" | "rtl";
-}
+import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { bdo as Bdo } from "../interface/_index.js";
 
 export class bdo extends tag {
 	constructor();

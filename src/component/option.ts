@@ -1,10 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Option extends attr {
-	disabled?: boolean;
-	selected?: boolean;
-	value?: string;
-}
+import { option as Option } from "../interface/_index.js";
 
 export class option extends tag {
 	constructor();

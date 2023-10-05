@@ -1,9 +1,5 @@
 import { tagConstructor, tag, attr } from "@printf83/ts-tag";
-
-export interface Style extends attr {
-	media?: string;
-	type?: "text/css";
-}
+import { style as Style } from "../interface/_index.js";
 
 export class style extends tag {
 	constructor();

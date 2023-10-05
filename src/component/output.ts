@@ -1,10 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Output extends attr {
-	for?: string;
-	from?: string;
-	name?: string;
-}
+import { output as Output } from "../interface/_index.js";
 
 export class output extends tag {
 	constructor();

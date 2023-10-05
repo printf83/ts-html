@@ -1,38 +1,5 @@
-import { mergeClass, mergeObject, tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface A extends attr {
-	download?: string;
-	href?: string;
-	hreflang?: string;
-	media?: string;
-	ping?: string;
-	referrerpolicy?:
-		| "no-referrer"
-		| "no-referrer-when-downgrade"
-		| "origin"
-		| "origin-when-cross-origin"
-		| "same-origin"
-		| "strict-origin"
-		| "strict-origin-when-cross-origin"
-		| "unsafe-url";
-	rel?:
-		| "alternate"
-		| "author"
-		| "bookmark"
-		| "external"
-		| "help"
-		| "license"
-		| "next"
-		| "nofollow"
-		| "noreferrer"
-		| "noopener"
-		| "prev"
-		| "search"
-		| "tag";
-	target?: "_blank" | "_parent" | "_self" | "_top";
-	type?: string;
-	disabled?: boolean;
-}
+import { mergeClass, mergeObject, tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { a as A } from "../interface/_index.js";
 
 const convert = (attr: A) => {
 	attr.class = mergeClass(attr.class, [attr.disabled ? "disabled" : undefined]);

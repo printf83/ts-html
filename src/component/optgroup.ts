@@ -1,20 +1,8 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-import { option, Option } from "./option.js";
-
-export interface Optgroup extends attr {
-	disabled?: boolean;
-	label?: string;
-	attrLabel?: string;
-
-	item?: Option | Option[];
-}
+import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { option } from "./option.js";
+import { optgroup as Optgroup } from "../interface/_index.js";
 
 const convert = (attr: Optgroup) => {
-	if (attr.label) {
-		attr.attrLabel = attr.label;
-		delete attr.label;
-	}
-
 	if (attr.item && !attr.elem) {
 		if (!Array.isArray(attr.item)) {
 			attr.item = [attr.item];

@@ -1,9 +1,5 @@
-import { tagConstructorNoElement, tag, attr } from "@printf83/ts-tag";
-
-export interface Base extends attr {
-	href?: string;
-	target?: "_blank" | "_parent" | "_self" | "_top";
-}
+import { tagConstructorNoElement, tag } from "@printf83/ts-tag";
+import { base as Base } from "../interface/_index.js";
 
 export class base extends tag {
 	constructor();

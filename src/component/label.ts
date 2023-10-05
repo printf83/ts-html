@@ -1,9 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Label extends attr {
-	for?: string;
-	form?: string;
-}
+import { label as Label } from "../interface/_index.js";
 
 export class label extends tag {
 	constructor();

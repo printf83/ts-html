@@ -1,8 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Details extends attr {
-	open?: boolean;
-}
+import { details as Details } from "../interface/_index.js";
 
 export class details extends tag {
 	constructor();

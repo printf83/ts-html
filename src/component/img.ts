@@ -1,23 +1,5 @@
 import { tagConstructorNoElement, tag, attr } from "@printf83/ts-tag";
-
-export interface Img extends attr {
-	alt?: string;
-	crossorigin?: "anonymous" | "use-credentials";
-	ismap?: boolean;
-	loadingStyle?: "eager" | "lazy";
-	longdesc?: string;
-	referrerpolicy?:
-		| "no-referrer"
-		| "no-referrer-when-downgrade"
-		| "origin"
-		| "origin-when-cross-origin"
-		| "same-origin"
-		| "unsafe-url";
-	sizes?: string;
-	src?: string;
-	srcset?: string;
-	usemap?: string;
-}
+import { img as Img } from "../interface/_index.js";
 
 export class img extends tag {
 	constructor();

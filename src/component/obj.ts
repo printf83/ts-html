@@ -1,13 +1,5 @@
 import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
-
-export interface Obj extends attr {
-	dataText?: string;
-	form?: string;
-	name?: string;
-	type?: string;
-	typemustmatch?: boolean;
-	usemap?: string;
-}
+import { obj as Obj } from "../interface/_index.js";
 
 export class obj extends tag {
 	constructor();
