@@ -1,5 +1,4 @@
 import { I } from "./interface/_index.js";
-import * as core from "./util.js";
 
 import { a } from "./component/a.js";
 import { abbr } from "./component/abbr.js";
@@ -112,7 +111,6 @@ import { video } from "./component/video.js";
 import { wbr } from "./component/wbr.js";
 
 export {
-	core,
 	I,
 	a,
 	abbr,
