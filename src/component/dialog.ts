@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { dialog as Dialog } from "../interface/_index.js";
+import { dialog as Dialog } from "../interface/dialog.js";
 
 export class dialog extends I.tag {
 	constructor();

@@ -1,7 +1,7 @@
 import { core, I } from "@printf83/ts-tag";
 import { optgroup } from "./optgroup.js";
 import { option } from "./option.js";
-import { select as Select } from "../interface/_index.js";
+import { select as Select } from "../interface/select.js";
 
 const convert = (attr: Select) => {
 	if (attr.item && !attr.elem) {

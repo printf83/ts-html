@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { del as Del } from "../interface/_index.js";
+import { del as Del } from "../interface/del.js";
 
 export class del extends I.tag {
 	constructor();

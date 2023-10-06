@@ -1,4 +1,4 @@
-import * as I from "./interface/_index.js";
+import { I } from "./interface/_index.js";
 import * as core from "./util.js";
 
 import { a } from "./component/a.js";

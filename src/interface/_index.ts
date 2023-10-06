@@ -1,96 +1,96 @@
-import { a } from "./a.js";
-import { area } from "./area.js";
-import { audio } from "./audio.js";
-import { base } from "./base.js";
-import { bdo } from "./bdo.js";
-import { blockquote } from "./blockquote.js";
-import { button } from "./button.js";
-import { col } from "./col.js";
-import { colgroup } from "./colgroup.js";
-import { data } from "./data.js";
-import { datalist } from "./datalist.js";
-import { del } from "./del.js";
-import { details } from "./details.js";
-import { dialog } from "./dialog.js";
-import { embed } from "./embed.js";
-import { fieldset } from "./fieldset.js";
-import { form } from "./form.js";
-import { iframe } from "./iframe.js";
-import { img } from "./img.js";
-import { input } from "./input.js";
-import { ins } from "./ins.js";
-import { label } from "./label.js";
-import { link } from "./link.js";
-import { map } from "./map.js";
-import { meta } from "./meta.js";
-import { meter } from "./meter.js";
-import { obj } from "./obj.js";
-import { ol } from "./ol.js";
-import { optgroup } from "./optgroup.js";
-import { option } from "./option.js";
-import { output } from "./output.js";
-import { param } from "./param.js";
-import { picture } from "./picture.js";
-import { progress } from "./progress.js";
-import { q } from "./q.js";
-import { script } from "./script.js";
-import { select, selectitem } from "./select.js";
-import { source } from "./source.js";
-import { style } from "./style.js";
-import { td } from "./td.js";
-import { textarea } from "./textarea.js";
-import { th } from "./th.js";
-import { time } from "./time.js";
-import { track } from "./track.js";
-import { ul } from "./ul.js";
-import { video } from "./video.js";
+import { a as _a } from "./a.js";
+import { area as _area } from "./area.js";
+import { audio as _audio } from "./audio.js";
+import { base as _base } from "./base.js";
+import { bdo as _bdo } from "./bdo.js";
+import { blockquote as _blockquote } from "./blockquote.js";
+import { button as _button } from "./button.js";
+import { col as _col } from "./col.js";
+import { colgroup as _colgroup } from "./colgroup.js";
+import { data as _data } from "./data.js";
+import { datalist as _datalist } from "./datalist.js";
+import { del as _del } from "./del.js";
+import { details as _details } from "./details.js";
+import { dialog as _dialog } from "./dialog.js";
+import { embed as _embed } from "./embed.js";
+import { fieldset as _fieldset } from "./fieldset.js";
+import { form as _form } from "./form.js";
+import { iframe as _iframe } from "./iframe.js";
+import { img as _img } from "./img.js";
+import { input as _input } from "./input.js";
+import { ins as _ins } from "./ins.js";
+import { label as _label } from "./label.js";
+import { link as _link } from "./link.js";
+import { map as _map } from "./map.js";
+import { meta as _meta } from "./meta.js";
+import { meter as _meter } from "./meter.js";
+import { obj as _obj } from "./obj.js";
+import { ol as _ol } from "./ol.js";
+import { optgroup as _optgroup } from "./optgroup.js";
+import { option as _option } from "./option.js";
+import { output as _output } from "./output.js";
+import { param as _param } from "./param.js";
+import { picture as _picture } from "./picture.js";
+import { progress as _progress } from "./progress.js";
+import { q as _q } from "./q.js";
+import { script as _script } from "./script.js";
+import { select as _select, selectitem as _selectitem } from "./select.js";
+import { source as _source } from "./source.js";
+import { style as _style } from "./style.js";
+import { td as _td } from "./td.js";
+import { textarea as _textarea } from "./textarea.js";
+import { th as _th } from "./th.js";
+import { time as _time } from "./time.js";
+import { track as _track } from "./track.js";
+import { ul as _ul } from "./ul.js";
+import { video as _video } from "./video.js";
 
-export {
-	a,
-	area,
-	audio,
-	base,
-	bdo,
-	blockquote,
-	button,
-	col,
-	colgroup,
-	data,
-	datalist,
-	del,
-	details,
-	dialog,
-	embed,
-	fieldset,
-	form,
-	iframe,
-	img,
-	input,
-	ins,
-	label,
-	link,
-	map,
-	meta,
-	meter,
-	obj,
-	ol,
-	optgroup,
-	option,
-	output,
-	param,
-	picture,
-	progress,
-	q,
-	script,
-	select,
-	selectitem,
-	source,
-	style,
-	td,
-	textarea,
-	th,
-	time,
-	track,
-	ul,
-	video,
-};
+export namespace I {
+	export type a = _a;
+	export type area = _area;
+	export type audio = _audio;
+	export type base = _base;
+	export type bdo = _bdo;
+	export type blockquote = _blockquote;
+	export type button = _button;
+	export type col = _col;
+	export type colgroup = _colgroup;
+	export type data = _data;
+	export type datalist = _datalist;
+	export type del = _del;
+	export type details = _details;
+	export type dialog = _dialog;
+	export type embed = _embed;
+	export type fieldset = _fieldset;
+	export type form = _form;
+	export type iframe = _iframe;
+	export type img = _img;
+	export type input = _input;
+	export type ins = _ins;
+	export type label = _label;
+	export type link = _link;
+	export type map = _map;
+	export type meta = _meta;
+	export type meter = _meter;
+	export type obj = _obj;
+	export type ol = _ol;
+	export type optgroup = _optgroup;
+	export type option = _option;
+	export type output = _output;
+	export type param = _param;
+	export type picture = _picture;
+	export type progress = _progress;
+	export type q = _q;
+	export type script = _script;
+	export type select = _select;
+	export type selectitem = _selectitem;
+	export type source = _source;
+	export type style = _style;
+	export type td = _td;
+	export type textarea = _textarea;
+	export type th = _th;
+	export type time = _time;
+	export type track = _track;
+	export type ul = _ul;
+	export type video = _video;
+}

@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { form as Form } from "../interface/_index.js";
+import { form as Form } from "../interface/form.js";
 
 export class form extends I.tag {
 	constructor();

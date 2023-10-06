@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { blockquote as Blockquote } from "../interface/_index.js";
+import { blockquote as Blockquote } from "../interface/blockquote.js";
 
 export class blockquote extends I.tag {
 	constructor();

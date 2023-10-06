@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { fieldset as Fieldset } from "../interface/_index.js";
+import { fieldset as Fieldset } from "../interface/fieldset.js";
 
 export class fieldset extends I.tag {
 	constructor();

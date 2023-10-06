@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { option as Option } from "../interface/_index.js";
+import { option as Option } from "../interface/option.js";
 
 export class option extends I.tag {
 	constructor();

@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { img as Img } from "../interface/_index.js";
+import { img as Img } from "../interface/img.js";
 
 export class img extends I.tag {
 	constructor();

@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { audio as Audio } from "../interface/_index.js";
+import { audio as Audio } from "../interface/audio.js";
 
 export class audio extends I.tag {
 	constructor();

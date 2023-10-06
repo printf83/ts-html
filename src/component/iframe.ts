@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { iframe as Iframe } from "../interface/_index.js";
+import { iframe as Iframe } from "../interface/iframe.js";
 
 export class iframe extends I.tag {
 	constructor();

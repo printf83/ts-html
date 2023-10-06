@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { meter as Meter } from "../interface/_index.js";
+import { meter as Meter } from "../interface/meter.js";
 
 export class meter extends I.tag {
 	constructor();

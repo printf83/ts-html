@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { label as Label } from "../interface/_index.js";
+import { label as Label } from "../interface/label.js";
 
 export class label extends I.tag {
 	constructor();

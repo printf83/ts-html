@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { input as Input } from "../interface/_index.js";
+import { input as Input } from "../interface/input.js";
 
 export class input extends I.tag {
 	constructor();

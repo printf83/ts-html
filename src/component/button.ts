@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { button as Button } from "../interface/_index.js";
+import { button as Button } from "../interface/button.js";
 
 export class button extends I.tag {
 	constructor();

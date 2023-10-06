@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { track as Track } from "../interface/_index.js";
+import { track as Track } from "../interface/track.js";
 
 export class track extends I.tag {
 	constructor();

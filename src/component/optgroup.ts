@@ -1,6 +1,6 @@
 import { core, I } from "@printf83/ts-tag";
 import { option } from "./option.js";
-import { optgroup as Optgroup } from "../interface/_index.js";
+import { optgroup as Optgroup } from "../interface/optgroup.js";
 
 const convert = (attr: Optgroup) => {
 	if (attr.item && !attr.elem) {

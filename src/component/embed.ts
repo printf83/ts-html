@@ -1,5 +1,5 @@
 import { I } from "@printf83/ts-tag";
-import { embed as Embed } from "../interface/_index.js";
+import { embed as Embed } from "../interface/embed.js";
 
 export class embed extends I.tag {
 	constructor();

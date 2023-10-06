@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { area as Area } from "../interface/_index.js";
+import { area as Area } from "../interface/area.js";
 
 export class area extends I.tag {
 	constructor();

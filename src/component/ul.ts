@@ -1,6 +1,6 @@
 import { core, I } from "@printf83/ts-tag";
 import { li } from "./li.js";
-import { ul as Ul } from "../interface/_index.js";
+import { ul as Ul } from "../interface/ul.js";
 
 const convert = (attr: Ul) => {
 	if (attr.item && !attr.elem) {

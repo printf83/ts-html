@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { a as A } from "../interface/_index.js";
+import { a as A } from "../interface/a.js";
 
 const convert = (attr: A) => {
 	attr.class = core.mergeClass(attr.class, [attr.disabled ? "disabled" : undefined]);

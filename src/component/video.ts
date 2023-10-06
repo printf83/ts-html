@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { video as Video } from "../interface/_index.js";
+import { video as Video } from "../interface/video.js";
 
 export class video extends I.tag {
 	constructor();

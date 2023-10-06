@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { time as Time } from "../interface/_index.js";
+import { time as Time } from "../interface/time.js";
 
 export class time extends I.tag {
 	constructor();

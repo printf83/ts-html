@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { bdo as Bdo } from "../interface/_index.js";
+import { bdo as Bdo } from "../interface/bdo.js";
 
 export class bdo extends I.tag {
 	constructor();

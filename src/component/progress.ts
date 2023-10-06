@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { progress as Progress } from "../interface/_index.js";
+import { progress as Progress } from "../interface/progress.js";
 
 export class progress extends I.tag {
 	constructor();

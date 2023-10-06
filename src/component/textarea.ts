@@ -1,5 +1,5 @@
 import { core, I } from "@printf83/ts-tag";
-import { textarea as Textarea } from "../interface/_index.js";
+import { textarea as Textarea } from "../interface/textarea.js";
 
 const convert = (attr: Textarea) => {
 	//move value to elem

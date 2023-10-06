@@ -1,6 +1,6 @@
 import { core, I } from "@printf83/ts-tag";
 import { li } from "./li.js";
-import { ol as Ol } from "../interface/_index.js";
+import { ol as Ol } from "../interface/ol.js";
 
 const convert = (attr: Ol) => {
 	if (attr.item && !attr.elem) {
