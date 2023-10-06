@@ -1,4 +1,4 @@
-import { core, tag, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { li } from "./li.js";
 import { ol as Ol } from "../interface/_index.js";
 
@@ -18,12 +18,12 @@ const convert = (attr: Ol) => {
 	return attr;
 };
 
-export class ol extends tag {
+export class ol extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Ol);
-	constructor(attr: Ol, elem: elem | elem[]);
+	constructor(attr: Ol, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
-		super("ol", convert(tagConstructor<Ol>("elem", arg)));
+		super("ol", convert(core.tagConstructor<Ol>("elem", arg)));
 	}
 }

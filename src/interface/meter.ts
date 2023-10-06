@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface meter extends attr {
+export interface meter extends I.attr {
 	form?: string;
 	high?: number;
 	low?: number;

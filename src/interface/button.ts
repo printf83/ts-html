@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface button extends attr {
+export interface button extends I.attr {
 	autofocus?: boolean;
 	disabled?: boolean;
 	form?: string;

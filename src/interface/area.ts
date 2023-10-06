@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface area extends attr {
+export interface area extends I.attr {
 	alt?: string;
 	coords?: string;
 	download?: string;

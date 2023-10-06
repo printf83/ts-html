@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface param extends attr {
+export interface param extends I.attr {
 	name?: string;
 	value?: string;
 }

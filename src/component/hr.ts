@@ -1,9 +1,9 @@
-import { core, tag, attr } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 
-export class hr extends tag {
+export class hr extends I.tag {
 	constructor();
-	constructor(attr: attr);
+	constructor(attr: I.attr);
 	constructor(...arg: any[]) {
-		super("hr", core.tagConstructorNoElement<attr>(arg));
+		super("hr", core.tagConstructorNoElement(arg));
 	}
 }

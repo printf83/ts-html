@@ -1,11 +1,11 @@
-import { core, tag, attr, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { time as Time } from "../interface/_index.js";
 
-export class time extends tag {
+export class time extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Time);
-	constructor(attr: Time, elem: elem | elem[]);
+	constructor(attr: Time, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
 		super("time", core.tagConstructor<Time>("elem", arg));
 	}

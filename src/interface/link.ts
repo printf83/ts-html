@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface link extends attr {
+export interface link extends I.attr {
 	crossorigin?: "anonymous" | "use-credentials";
 	href?: string;
 	hreflang?: string;

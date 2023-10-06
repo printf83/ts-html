@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface input extends attr {
+export interface input extends I.attr {
 	accept?: string;
 	alt?: string;
 	autocomplete?: "on" | "off";

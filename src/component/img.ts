@@ -1,7 +1,7 @@
-import { core, tag } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { img as Img } from "../interface/_index.js";
 
-export class img extends tag {
+export class img extends I.tag {
 	constructor();
 	constructor(attr: Img);
 	constructor(...arg: any[]) {

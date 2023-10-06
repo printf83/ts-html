@@ -1,5 +1,5 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface bdo extends attr {
+export interface bdo extends I.attr {
 	dir?: "ltr" | "rtl";
 }

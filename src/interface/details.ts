@@ -1,5 +1,5 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface details extends attr {
+export interface details extends I.attr {
 	open?: boolean;
 }

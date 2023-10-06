@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface iframe extends attr {
+export interface iframe extends I.attr {
 	allowfullscreen?: boolean;
 	allowpaymentrequest?: boolean;
 	loadingStyle?: "eager" | "lazy";

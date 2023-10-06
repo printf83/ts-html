@@ -1,4 +1,4 @@
-import { core, tag, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { option } from "./option.js";
 import { optgroup as Optgroup } from "../interface/_index.js";
 
@@ -18,12 +18,12 @@ const convert = (attr: Optgroup) => {
 	return attr;
 };
 
-export class optgroup extends tag {
+export class optgroup extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Optgroup);
-	constructor(attr: Optgroup, elem: elem | elem[]);
+	constructor(attr: Optgroup, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
-		super("optgroup", convert(tagConstructor<Optgroup>("elem", arg)));
+		super("optgroup", convert(core.tagConstructor<Optgroup>("elem", arg)));
 	}
 }

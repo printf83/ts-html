@@ -1,5 +1,5 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface time extends attr {
+export interface time extends I.attr {
 	datetime?: Date;
 }

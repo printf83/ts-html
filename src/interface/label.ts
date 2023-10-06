@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface label extends attr {
+export interface label extends I.attr {
 	for?: string;
 	form?: string;
 }

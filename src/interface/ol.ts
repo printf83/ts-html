@@ -1,5 +1,5 @@
-import { attr, elem } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface ol extends attr {
-	item?: elem | elem[];
+export interface ol extends I.attr {
+	item?: I.elem | I.elem[];
 }

@@ -1,7 +1,7 @@
-import { tag } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 import { embed as Embed } from "../interface/_index.js";
 
-export class embed extends tag {
+export class embed extends I.tag {
 	constructor();
 	constructor(type: string, src: string);
 	constructor(attr: Embed);

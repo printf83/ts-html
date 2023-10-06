@@ -1,5 +1,5 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface datalist extends attr {
+export interface datalist extends I.attr {
 	item?: string | string[];
 }

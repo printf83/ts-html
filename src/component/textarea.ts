@@ -1,4 +1,4 @@
-import { core, tag } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { textarea as Textarea } from "../interface/_index.js";
 
 const convert = (attr: Textarea) => {
@@ -20,7 +20,7 @@ const convert = (attr: Textarea) => {
 	return attr;
 };
 
-export class textarea extends tag {
+export class textarea extends I.tag {
 	constructor();
 	constructor(attr: Textarea);
 	constructor(...arg: any[]) {

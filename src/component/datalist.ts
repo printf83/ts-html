@@ -1,4 +1,4 @@
-import { core, tag, attr, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { datalist as Datalist } from "../interface/_index.js";
 import { option } from "./option.js";
 
@@ -18,12 +18,12 @@ const convert = (attr: Datalist) => {
 	return attr;
 };
 
-export class datalist extends tag {
+export class datalist extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Datalist);
-	constructor(attr: Datalist, elem: elem | elem[]);
+	constructor(attr: Datalist, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
-		super("datalist", convert(tagConstructor<Datalist>("elem", arg)));
+		super("datalist", convert(core.tagConstructor<Datalist>("elem", arg)));
 	}
 }

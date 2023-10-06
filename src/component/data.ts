@@ -1,11 +1,11 @@
-import { core, tag, attr, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { data as Data } from "../interface/_index.js";
 
-export class data extends tag {
+export class data extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Data);
-	constructor(attr: Data, elem: elem | elem[]);
+	constructor(attr: Data, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
 		super("data", core.tagConstructor<Data>("elem", arg));
 	}

@@ -1,11 +1,11 @@
-import { core, tag, attr, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { dialog as Dialog } from "../interface/_index.js";
 
-export class dialog extends tag {
+export class dialog extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Dialog);
-	constructor(attr: Dialog, elem: elem | elem[]);
+	constructor(attr: Dialog, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
 		super("dialog", core.tagConstructor<Dialog>("elem", arg));
 	}

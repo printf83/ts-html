@@ -1,11 +1,11 @@
-import { core, tag, attr, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { map as Map } from "../interface/_index.js";
 
-export class map extends tag {
+export class map extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Map);
-	constructor(attr: Map, elem: elem | elem[]);
+	constructor(attr: Map, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
 		super("map", core.tagConstructor<Map>("elem", arg));
 	}

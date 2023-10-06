@@ -1,4 +1,4 @@
-import { core, tag, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { optgroup } from "./optgroup.js";
 import { option } from "./option.js";
 import { select as Select } from "../interface/_index.js";
@@ -34,12 +34,12 @@ const convert = (attr: Select) => {
 	return attr;
 };
 
-export class select extends tag {
+export class select extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Select);
-	constructor(attr: Select, elem: elem | elem[]);
+	constructor(attr: Select, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
-		super("select", convert(tagConstructor<Select>("elem", arg)));
+		super("select", convert(core.tagConstructor<Select>("elem", arg)));
 	}
 }

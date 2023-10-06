@@ -1,10 +1,10 @@
-import { core, tag, attr, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 
-export class sup extends tag {
+export class sup extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
-	constructor(attr: attr);
-	constructor(attr: attr, elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
+	constructor(attr: I.attr);
+	constructor(attr: I.attr, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
 		super("sup", core.tagConstructor("elem", arg));
 	}

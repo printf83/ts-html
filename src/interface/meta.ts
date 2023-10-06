@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface meta extends attr {
+export interface meta extends I.attr {
 	charset?: string;
 	content?: string;
 	httpEquiv?: "content-security-policy" | "content-type" | "default-style" | "refresh";

@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface textarea extends attr {
+export interface textarea extends I.attr {
 	autofocus?: boolean;
 	cols?: number;
 	dirname?: string;

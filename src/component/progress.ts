@@ -1,11 +1,11 @@
-import { core, tag, attr, elem } from "@printf83/ts-tag";
+import { core, I } from "@printf83/ts-tag";
 import { progress as Progress } from "../interface/_index.js";
 
-export class progress extends tag {
+export class progress extends I.tag {
 	constructor();
-	constructor(elem: elem | elem[]);
+	constructor(elem: I.elem | I.elem[]);
 	constructor(attr: Progress);
-	constructor(attr: Progress, elem: elem | elem[]);
+	constructor(attr: Progress, elem: I.elem | I.elem[]);
 	constructor(...arg: any[]) {
 		super("progress", core.tagConstructor<Progress>("elem", arg));
 	}

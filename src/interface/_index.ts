@@ -83,6 +83,7 @@ export {
 	q,
 	script,
 	select,
+	selectitem,
 	source,
 	style,
 	td,

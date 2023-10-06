@@ -1,5 +1,5 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface blockquote extends attr {
+export interface blockquote extends I.attr {
 	cite?: string;
 }

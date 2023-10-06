@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface audio extends attr {
+export interface audio extends I.attr {
 	autoplay?: boolean;
 	controls?: boolean;
 	loop?: boolean;

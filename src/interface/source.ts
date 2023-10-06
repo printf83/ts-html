@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface source extends attr {
+export interface source extends I.attr {
 	media?: string;
 	sizes?: string;
 	src?: string;

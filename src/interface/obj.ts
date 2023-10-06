@@ -1,6 +1,6 @@
-import { attr } from "@printf83/ts-tag";
+import { I } from "@printf83/ts-tag";
 
-export interface obj extends attr {
+export interface obj extends I.attr {
 	dataText?: string;
 	form?: string;
 	name?: string;
