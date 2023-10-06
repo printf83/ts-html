@@ -1,4 +1,4 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { core, tag, elem } from "@printf83/ts-tag";
 import { td as Td } from "../interface/_index.js";
 
 export class td extends tag {
@@ -7,6 +7,6 @@ export class td extends tag {
 	constructor(attr: Td);
 	constructor(attr: Td, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("td", tagConstructor<Td>("elem", arg));
+		super("td", core.tagConstructor<Td>("elem", arg));
 	}
 }

@@ -1,4 +1,4 @@
-import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { core, tag, elem } from "@printf83/ts-tag";
 import { area as Area } from "../interface/_index.js";
 
 export class area extends tag {
@@ -7,6 +7,6 @@ export class area extends tag {
 	constructor(attr: Area);
 	constructor(attr: Area, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("area", tagConstructor<Area>("elem", arg));
+		super("area", core.tagConstructor<Area>("elem", arg));
 	}
 }

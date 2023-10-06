@@ -1,4 +1,4 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { core, tag, attr, elem } from "@printf83/ts-tag";
 import { progress as Progress } from "../interface/_index.js";
 
 export class progress extends tag {
@@ -7,6 +7,6 @@ export class progress extends tag {
 	constructor(attr: Progress);
 	constructor(attr: Progress, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("progress", tagConstructor<Progress>("elem", arg));
+		super("progress", core.tagConstructor<Progress>("elem", arg));
 	}
 }

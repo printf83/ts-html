@@ -1,4 +1,4 @@
-import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { core, tag, elem } from "@printf83/ts-tag";
 import { optgroup } from "./optgroup.js";
 import { option } from "./option.js";
 import { select as Select } from "../interface/_index.js";

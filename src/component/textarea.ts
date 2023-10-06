@@ -1,4 +1,4 @@
-import { tagConstructorNoElement, tag, attr } from "@printf83/ts-tag";
+import { core, tag } from "@printf83/ts-tag";
 import { textarea as Textarea } from "../interface/_index.js";
 
 const convert = (attr: Textarea) => {
@@ -24,6 +24,6 @@ export class textarea extends tag {
 	constructor();
 	constructor(attr: Textarea);
 	constructor(...arg: any[]) {
-		super("textarea", convert(tagConstructorNoElement<Textarea>(arg)));
+		super("textarea", convert(core.tagConstructorNoElement<Textarea>(arg)));
 	}
 }

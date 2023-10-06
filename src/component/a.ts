@@ -1,13 +1,13 @@
-import { mergeClass, mergeObject, tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { core, tag, elem } from "@printf83/ts-tag";
 import { a as A } from "../interface/_index.js";
 
 const convert = (attr: A) => {
-	attr.class = mergeClass(attr.class, [attr.disabled ? "disabled" : undefined]);
+	attr.class = core.mergeClass(attr.class, [attr.disabled ? "disabled" : undefined]);
 
 	if (attr.disabled) {
 		delete attr.href;
 
-		attr = mergeObject(
+		attr = core.mergeObject(
 			{
 				aria: { disabled: "true" },
 				tabindex: -1,
@@ -26,6 +26,6 @@ export class a extends tag {
 	constructor(attr: A);
 	constructor(attr: A, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("a", convert(tagConstructor<A>("elem", arg)));
+		super("a", convert(core.tagConstructor<A>("elem", arg)));
 	}
 }

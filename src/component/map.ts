@@ -1,4 +1,4 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { core, tag, attr, elem } from "@printf83/ts-tag";
 import { map as Map } from "../interface/_index.js";
 
 export class map extends tag {
@@ -7,6 +7,6 @@ export class map extends tag {
 	constructor(attr: Map);
 	constructor(attr: Map, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("map", tagConstructor<Map>("elem", arg));
+		super("map", core.tagConstructor<Map>("elem", arg));
 	}
 }

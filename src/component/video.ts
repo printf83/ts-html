@@ -1,4 +1,4 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { core, tag, attr, elem } from "@printf83/ts-tag";
 import { video as Video } from "../interface/_index.js";
 
 export class video extends tag {
@@ -7,6 +7,6 @@ export class video extends tag {
 	constructor(attr: Video);
 	constructor(attr: Video, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("video", tagConstructor<Video>("elem", arg));
+		super("video", core.tagConstructor<Video>("elem", arg));
 	}
 }

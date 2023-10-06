@@ -1,4 +1,4 @@
-import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { core, tag, elem } from "@printf83/ts-tag";
 import { blockquote as Blockquote } from "../interface/_index.js";
 
 export class blockquote extends tag {
@@ -7,6 +7,6 @@ export class blockquote extends tag {
 	constructor(attr: Blockquote);
 	constructor(attr: Blockquote, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("blockquote", tagConstructor<Blockquote>("elem", arg));
+		super("blockquote", core.tagConstructor<Blockquote>("elem", arg));
 	}
 }

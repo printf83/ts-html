@@ -1,4 +1,4 @@
-import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { core, tag, elem } from "@printf83/ts-tag";
 import { li } from "./li.js";
 import { ol as Ol } from "../interface/_index.js";
 

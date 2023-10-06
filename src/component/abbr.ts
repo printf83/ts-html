@@ -1,4 +1,4 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { core, tag, attr, elem } from "@printf83/ts-tag";
 
 export class abbr extends tag {
 	constructor();
@@ -6,6 +6,6 @@ export class abbr extends tag {
 	constructor(attr: attr);
 	constructor(attr: attr, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("abbr", tagConstructor("elem", arg));
+		super("abbr", core.tagConstructor("elem", arg));
 	}
 }

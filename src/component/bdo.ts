@@ -1,4 +1,4 @@
-import { tagConstructor, tag, elem } from "@printf83/ts-tag";
+import { core, tag, elem } from "@printf83/ts-tag";
 import { bdo as Bdo } from "../interface/_index.js";
 
 export class bdo extends tag {
@@ -7,6 +7,6 @@ export class bdo extends tag {
 	constructor(attr: Bdo);
 	constructor(attr: Bdo, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("bdo", tagConstructor<Bdo>("elem", arg));
+		super("bdo", core.tagConstructor<Bdo>("elem", arg));
 	}
 }

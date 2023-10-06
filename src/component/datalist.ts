@@ -1,4 +1,4 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { core, tag, attr, elem } from "@printf83/ts-tag";
 import { datalist as Datalist } from "../interface/_index.js";
 import { option } from "./option.js";
 

@@ -1,4 +1,4 @@
-import { tagConstructor, tag, attr, elem } from "@printf83/ts-tag";
+import { core, tag, attr, elem } from "@printf83/ts-tag";
 
 export class strong extends tag {
 	constructor();
@@ -6,6 +6,6 @@ export class strong extends tag {
 	constructor(attr: attr);
 	constructor(attr: attr, elem: elem | elem[]);
 	constructor(...arg: any[]) {
-		super("strong", tagConstructor("elem", arg));
+		super("strong", core.tagConstructor("elem", arg));
 	}
 }
