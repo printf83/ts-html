@@ -1,6 +1,6 @@
 {
 	"name": "@printf83/ts-html",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"description": "Build html tag using TS",
 	"keywords": [
 		"html",
@@ -28,12 +28,11 @@
 		}
 	},
 	"devDependencies": {
-		"@printf83/ts-tag": "^0.0.1",
 		"@types/node": "^20.8.2",
 		"typescript": "^5.2.2"
 	},
 	"dependencies": {
-		"@printf83/ts-tag": "^0.0.1"
+		"@printf83/ts-tag": "^0.0.5"
 	},
 	"scripts": {
 		"link": "npm link && npm link @printf83/ts-tag",
